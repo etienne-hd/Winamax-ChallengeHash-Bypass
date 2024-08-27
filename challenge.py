@@ -6,7 +6,6 @@ def convert_to_base64(string):
     bytes_string = string.encode('utf-8')
     base64_bytes = base64.b64encode(bytes_string)
     base64_string = base64_bytes.decode('utf-8')
-    
     return base64_string
 
 def hash256(challenge):
